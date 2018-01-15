@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planning Your Activties</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body background = "http://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSquares_1920x1234.jpg">
+        <br><br><br>
+        <table style="width:100%">
+  <tr>
+    <th><a href="index3.html" style = "color: white"> Home </a></th>
+    <th><a href="index2.html" style = "color: white"> Sign Up </a></th>
+    <th><a href = "index3.html" style = "color: white"> Login </a></th> 
+  </tr>
+ </table>
+    <br><br><br>
+    <div class="container">
+    <center><img src="http://res.freestockphotos.biz/pictures/14/14408-illustration-of-an-open-book-pv.png" alt="Notebook!" height= "800" width="1000" ></center>
+    <div class="top-right">
+    <form action="action_page.php">
+
+    <br><br><br><br>
+
+    <label style="color: rgb(0, 115, 230); font-size: 30px"><b>Assignment Name: </b></label>
+    <input type="text" placeholder="Assignment's Name" name="uname" required>
+
+    <br><br><br><br>
+
+    <label style="color: rgb(0, 115, 230); font-size: 30px"><b>Number of Days Left: </b></label>
+    <input type="number" placeholder="Number of Days" name="uname" required>
+
+    <br><br><br><br>
+
+    <label style="color: rgb(0, 115, 230); font-size: 30px"><b>Percent Finished: </b></label>
+    <input type="percent" placeholder="Enter a Percentage" name="uname" required>
+
+    <br><br><br><br>
+
+    <label style="color: rgb(0, 115, 230); font-size: 30px"><b>Priority Ranking: </b></label>
+    <input type="percent" placeholder="Enter a number 1-10 " name="uname" required>
+
+    <br><br><br><br>
+
+   <button type="submit">Submit Your Assignment</button>
+  </form>
+</div>
+
+<div class = "top-left">
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Day')">Day</button>
+  <button class="tablinks" onclick="openCity(event, 'Week')">Week</button>
+</div>
+<div id="Day" class="tabcontent">
+  <h4>Your Daily Schedule</h4>
+  <p>[3:30 - 4:00] Finish math homework. (30 minutes)<br><br>
+  [4:00 - 5:00] Extracurricular #1, Piano. (60 minutes)<br><br>
+  [5:00 - 6:00] Study for Physics Chapter 12 Test. (60 minutes)<br><br>
+  [6:00 - 6:30] Dinner. (30 minutes)<br><br>
+  [6:30 - 7:00] Literature Essay, 33% done. (30 minutes)<br><br>
+  [7:00 - 8:00] AP Computer Science homework. (60 minutes)<br><br>
+  [8:00 - 8:45] Extracurricular #2, Literature tutoring. (45 minutes)<br><br>
+  [8:45 - 5:30] Sleep. (525 minutes)</p>
+</div>
+
+<div id="Week" class="tabcontent">
+  <h4>Your Weekly Schedule</h4>
+  <p>Monday (TODAY)<br><br>
+  Tuesday (TOMORROW)<br><br>
+  Wednesday<br><br>
+  Thursday<br><br>
+  Friday<br><br>
+  Saturday<br><br>
+  Sunday</p>
+</div>
+</div>
+</div>
+
+</form> 
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
